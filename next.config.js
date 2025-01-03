@@ -12,8 +12,9 @@ const nextConfig = {
     ignoreDuringBuilds: true,
   },
   // Add basePath for GitHub Pages
-  basePath: '/joblancarjayawebsite',
-  assetPrefix: '/joblancarjayawebsite/',
+  basePath: process.env.NODE_ENV === 'production' ? '/joblancarjayawebsite' : '',
+  assetPrefix: process.env.NODE_ENV === 'production' ? '/joblancarjayawebsite/' : '',
+  trailingSlash: true,
 }
 
 module.exports = nextConfig
