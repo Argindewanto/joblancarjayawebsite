@@ -10,7 +10,10 @@ const nextConfig = {
   },
   eslint: {
     ignoreDuringBuilds: true,
-  }
+  },
+  // Add basePath for GitHub Pages
+  basePath: '/joblancarjayawebsite',
+  assetPrefix: '/joblancarjayawebsite/',
 }
 
 module.exports = nextConfig
