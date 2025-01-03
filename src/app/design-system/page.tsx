@@ -1,18 +1,3 @@
-import StoreButtons from '@/components/StoreButtons';
-
-function ColorSwatch({ color, name }: { color: string; name: string }) {
-  return (
-    <div className="flex flex-col items-start">
-      <div
-        className="h-20 w-20 rounded-lg shadow-md"
-        style={{ backgroundColor: color }}
-      />
-      <span className="mt-2 text-sm">{name}</span>
-      <span className="text-mono-500 text-sm">{color}</span>
-    </div>
-  );
-}
-
 export default function DesignSystem() {
   return (
     <main className="min-h-screen py-20 px-6">
