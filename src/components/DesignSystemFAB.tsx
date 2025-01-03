@@ -1,7 +1,5 @@
 'use client';
 
-import Link from 'next/link';
-
 export default function DesignSystemFAB() {
   // Only render in development
   if (process.env.NODE_ENV === 'production') return null;
